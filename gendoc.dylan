@@ -187,7 +187,9 @@ define function fetch-packages
 
       // For DPG, source/index.rst. For others, documentation/source/index.rst
       iterate loop (files = list(file-locator(scratch-subdir, "source", "index.rst"),
-                                 file-locator(scratch-subdir, "documentation", "source", "index.rst")))
+                                 file-locator(scratch-subdir, "documentation", "source", "index.rst"),
+                                 file-locator(scratch-subdir, "doc",           "source", "index.rst"),
+                                 file-locator(scratch-subdir, "docs",          "source", "index.rst")))
         if (empty?(files))
           io/format-out("%s: no documentation; skipping.\n", pkg-name);
         else
