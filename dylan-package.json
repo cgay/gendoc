@@ -8,7 +8,7 @@
         "sphinx-extensions",
         "testworks"
     ],
-    "description": "Generate docs for all Dylan catalog libraries",
+    "description": "Build docs for package.opendylan.org",
     "name": "gendoc",
     "version": "0.2.0",
     "url": "https://github.com/dylan-lang/gendoc",

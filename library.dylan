@@ -6,7 +6,7 @@ define library gendoc
   use command-line-parser;
   use common-dylan;
   use deft,
-    import: { pacman, %pacman, shared };
+    import: { pacman, %pacman, deft-shared };
   use io,
     import: { format, format-out, streams };
   use logging;
@@ -28,7 +28,7 @@ define module gendoc
   use pacman, prefix: "pm/";
   // TODO: export find-release from pacman
   use %pacman, prefix: "%pm/";
-  use shared,                   // shared:deft
+  use deft-shared,                   // shared:deft
     // Not "deft/", due to https://github.com/dylan-lang/dylan-emacs-support/issues/36
     prefix: "deft-";
   use streams, prefix: "io/";
