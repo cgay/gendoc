@@ -1,6 +1,6 @@
-***************************
-Dylan Package Documentation
-***************************
+**************
+Dylan Packages
+**************
 
 Documentation for packages listed in the Dylan package catalog.
 
