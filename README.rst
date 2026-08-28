@@ -6,7 +6,7 @@ catalog. How it works, in a nutshell:
 
 * Load the package catalog.
 * Download each package to a temp directory.
-* Copy package ResTructured Text docs into a combined directory tree.
+* Copy package reStructuredText docs into a combined directory tree.
 * Modify :file:`docs/source/index.rst` to list each package in the top-level
   ``toctree`` directive.
 
@@ -25,8 +25,8 @@ To generate package docs in the :file:`docs/source` directory::
 
    $ git clone https://github.com/dylan-lang/gendoc
    $ cd gendoc
-   $ dylan update
-   $ dylan build -a
+   $ deft update
+   $ deft build -a
    $ _build/bin/gendoc --excludes-file exclude-list.txt docs/source/index.rst
    $ cd docs
    $ make html
