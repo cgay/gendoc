@@ -7,3 +7,4 @@
 # dylan-tool has been replaced by deft and there isn't yet a package property
 # to indicate exclusion from the docs.
 dylan-tool
+opendylan
