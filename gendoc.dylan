@@ -1,11 +1,8 @@
 Module: gendoc
 
-/* To be documented: anaphora, atom-language-dylan,
-   collection-extensions, command-interface, dylan-emacs-support, json,
-   lisp-to-dylan, mime, pacman-catalog, peg-parser, priority-queue,
-   sequence-stream, serialization, shootout, skip-list, slot-visitor,
-   sphinx-extensions (tools), uncommon-dylan, uri, uuid, vscode-dylan,
-   web-framework, wrapper-streams, xml-parser, xml-rpc, zlib
+/* To be documented: command-interface, lisp-to-dylan, pacman-catalog, peg-parser,
+   priority-queue, sequence-stream, serialization, shootout, skip-list, slot-visitor,
+   uri, vscode-dylan, web-framework, wrapper-streams, xml-parser, xml-rpc
 
   skip-list has some docs in the Hackers Guide, used as example doc.
 
