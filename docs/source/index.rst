@@ -9,20 +9,27 @@ Documentation for packages listed in the Dylan package catalog.
    <https://opendylan.org/library-reference/index.html>`_.  Over time more of these docs
    will be hosted here as they're moved into their own packages.
 
-   * `c-ffi <https://opendylan.org/library-reference/c-ffi/index.html>`_
-   * `collections <https://opendylan.org/library-reference/collections/index.html>`_
-   * `coloring-stream <https://opendylan.org/library-reference/coloring-stream/index.html>`_
-   * `common-dylan <https://opendylan.org/library-reference/common-dylan/index.html>`_
-   * `dispatch-profiler <https://opendylan.org/library-reference/dispatch-profiler/index.html>`_
-   * `dood <https://opendylan.org/library-reference/dood/index.html>`_
-   * `dylan <https://opendylan.org/library-reference/dylan/index.html>`_
-   * `io <https://opendylan.org/library-reference/io/index.html>`_
-   * `network <https://opendylan.org/library-reference/network/index.html>`_
-   * `progress-stream <https://opendylan.org/library-reference/progress-stream/index.html>`_
-   * `sql <https://opendylan.org/library-reference/sql/index.html>`_
-   * `system <https://opendylan.org/library-reference/system/index.html>`_
-   * `t-lists <https://opendylan.org/library-reference/t-lists/index.html>`_
-   * `win32 <https://opendylan.org/library-reference/win32/index.html>`_
+   ====================  ====================  ==================  ================
+   `c-ffi`_              `dispatch-profiler`_  `network`_          `t-lists`_
+   `collections`_        `dood`_               `progress-stream`_  `win32`_
+   `coloring-stream`_    `dylan`_              `sql`_
+   `common-dylan`_       `io`_                 `system`_
+   ====================  ====================  ==================  ================
+
+.. _c-ffi: https://opendylan.org/library-reference/c-ffi/index.html
+.. _collections: https://opendylan.org/library-reference/collections/index.html
+.. _coloring-stream: https://opendylan.org/library-reference/coloring-stream/index.html
+.. _common-dylan: https://opendylan.org/library-reference/common-dylan/index.html
+.. _dispatch-profiler: https://opendylan.org/library-reference/dispatch-profiler/index.html
+.. _dood: https://opendylan.org/library-reference/dood/index.html
+.. _dylan: https://opendylan.org/library-reference/dylan/index.html
+.. _io: https://opendylan.org/library-reference/io/index.html
+.. _network: https://opendylan.org/library-reference/network/index.html
+.. _progress-stream: https://opendylan.org/library-reference/progress-stream/index.html
+.. _sql: https://opendylan.org/library-reference/sql/index.html
+.. _system: https://opendylan.org/library-reference/system/index.html
+.. _t-lists: https://opendylan.org/library-reference/t-lists/index.html
+.. _win32: https://opendylan.org/library-reference/win32/index.html
 
 .. Text between the markers is replaced by gendoc.
 
