@@ -1,9 +1,11 @@
 # List of packages to exclude from the docs.  This is an escape hatch in case a
 # package causes a problem while building the package docs and we want to
-# exclude it temporarily.
+# exclude it temporarily, or completely obsolete and shouldn't be used.
 #
 # Blank lines and these comments are ignored.
 
 # dylan-tool has been replaced by deft and there isn't yet a package property
 # to indicate exclusion from the docs.
 dylan-tool
+gendoc
+opendylan

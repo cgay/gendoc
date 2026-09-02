@@ -15,7 +15,7 @@ author = 'Dylan Hackers'
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../_packages/sphinx-extensions/current/src/sphinxcontrib'))
+sys.path.insert(0, os.path.abspath('../../../_packages/sphinx-extensions/current/src/sphinxcontrib'))
 extensions = [
     'dylan.domain',
     'sphinx.ext.graphviz',
@@ -28,6 +28,14 @@ exclude_patterns = [
 ]
 show_authors = True
 templates_path = ['_templates']
+
+# Work around https://github.com/sphinx-doc/sphinx/issues/13904 Specifically, I (cgay)
+# didn't want to spend time bisecting the corba-guide docs to figure out what was causing
+# them to trigger the bug.
+#
+# Setting this default role has the benefit of surfacing more warnings than when it is
+# unset, the main case being when we use `foo` where we should use ``foo``.
+default_role = 'any'
 
 
 # -- Options for HTML output -------------------------------------------------
