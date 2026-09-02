@@ -19,7 +19,7 @@ catalog. How it works, in a nutshell:
 Usage
 -----
 
-To generate package docs in the :file:`docs/source` directory::
+To generate package docs in the :file:`_gendoc-build/docs` directory::
 
 .. code-block:: shell
 
@@ -27,7 +27,7 @@ To generate package docs in the :file:`docs/source` directory::
    $ cd gendoc
    $ deft update
    $ deft build -a
-   $ _build/bin/gendoc --excludes-file exclude-list.txt docs/source/index.rst
-   $ cd docs
+   $ _build/bin/gendoc
+   $ cd _gendoc-build/docs
    $ make html
    $ rsync -av _build/html/ /var/www/package.opendylan.org/

@@ -33,15 +33,15 @@ gendoc_dir=$(dirname $(realpath "$0"))
 cd ${gendoc_dir}
 
 # Get latest gendoc, DRM, etc, as specified in dylan-package.json.
-echo "Updating the Dylan workspace to get latest package dependencies..."
-dylan update
+echo "Updating workspace for latest package dependencies..."
+deft update
 
 echo "Building gendoc ..."
-dylan build gendoc
+deft build gendoc
 
-_build/bin/gendoc --excludes-file exclude-list.txt docs/source/index.rst
-cd docs
+_build/bin/gendoc
+cd _gendoc-build/docs
 make html
 
 echo "Copying package docs to ${dest_dir} ..."
-rsync -av ${gendoc_dir}/docs/_build/html/ ${dest_dir}
+rsync -av ${gendoc_dir}/_gendoc-build/docs/_build/html/ ${dest_dir}

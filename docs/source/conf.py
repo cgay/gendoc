@@ -15,7 +15,7 @@ author = 'Dylan Hackers'
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../_packages/sphinx-extensions/current/src/sphinxcontrib'))
+sys.path.insert(0, os.path.abspath('../../../_packages/sphinx-extensions/current/src/sphinxcontrib'))
 extensions = [
     'dylan.domain',
     'sphinx.ext.graphviz',
