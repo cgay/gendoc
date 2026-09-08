@@ -22,5 +22,5 @@ ${gendoc_dir}/update.sh "${dest_dir}"
 
 echo "Done updating package.opendylan.org"
 bzip2 $logfile
-# Keep 10 days of logs.
-find /var/log/opendylan.org -name 'gendoc-2*.log*' -mtime +10 -print -exec rm {} \;
+# Keep 90 days of logs.
+find /var/log/opendylan.org -name 'gendoc-2*.log*' -mtime +90 -print -exec rm {} \;
