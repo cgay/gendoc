@@ -4,7 +4,7 @@
 # file because there can be a lot of output and it seems better not to spam the
 # systemd journal.
 
-logfile=/var/log/update-package.opendylan.org.`date +%Y%m%d%H%M`.log
+logfile=/var/log/opendylan.org/gendoc-`date +%Y%m%d%H%M`.log
 exec > $logfile 2>&1
 
 export PATH=/root/dylan/bin:/opt/opendylan/bin:/opt/python3-venv/bin:${PATH}
@@ -23,4 +23,4 @@ ${gendoc_dir}/update.sh "${dest_dir}"
 echo "Done updating package.opendylan.org"
 bzip2 $logfile
 # Keep 10 days of logs.
-find /var/log -name 'update-package.opendylan.org.*' -mtime +10 -print -exec rm {} \;
+find /var/log/opendylan.org -name 'gendoc-2*.log*' -mtime +10 -print -exec rm {} \;
